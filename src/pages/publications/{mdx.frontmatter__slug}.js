@@ -1,5 +1,5 @@
 import * as React from "react";
-import Layout from "../../components/layout";
+import Layout from "../../components/layout/layout";
 import Seo from "../../components/seo";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
@@ -21,8 +21,12 @@ const BlogPost = ({ data, children }) => {
 };
 
 export const query = graphql`
-  query ($id: String) {
-    mdx(id: { eq: $id }) {
+  query (
+    $id: String
+  ) {
+    mdx(
+      id: { eq: $id }
+    ) {
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
