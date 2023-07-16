@@ -7,14 +7,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <p>后浪辩护人主页</p>
-      {/* <StaticImage
-        alt="Hanabi"
-        src="https://images.unsplash.com/photo-1613123661975-6c1bd58134bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1282&q=80"
-      />
-      <StaticImage
-      alt="tokyo"
-      src="../images/tokyo.jpg"
-      /> */}
+
     </Layout>
   )
 }

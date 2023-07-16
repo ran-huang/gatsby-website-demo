@@ -3,7 +3,7 @@ import Layout from "../../components/layout/layout";
 import Seo from "../../components/seo";
 import { Link, graphql } from "gatsby";
 
-const CasePage = ({ data }) => {
+const Cases = ({ data }) => {
   return (
     <Layout pageTitle="My Cases">
       {
@@ -44,4 +44,4 @@ export const query = graphql`
 
 export const Head = () => <Seo title="My Cases" />;
 
-export default CasePage;
+export default Cases;
