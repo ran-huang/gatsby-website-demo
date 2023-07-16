@@ -10,6 +10,7 @@ import {
 } from "./layout.module.css";
 import '@fontsource/noto-sans-sc';
 import Header from "../Header/Header";
+import StateHeader from "../Header/StateHeader";
 import Main from "../Main/Main";
 
 const Layout = ({ pageTitle, children }) => {
@@ -25,7 +26,7 @@ const Layout = ({ pageTitle, children }) => {
 
   return (
     <div className={container}>
-      <Header />
+      <StateHeader />
       <Main pageTitle={pageTitle} children={children} />
     </div>
   );
