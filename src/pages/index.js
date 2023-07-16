@@ -1,12 +1,13 @@
 import * as React from 'react'
 import Layout from '../components/layout/layout'
-import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
+import Hero from '../components/Homepage/Hero'
+
 
 const IndexPage = () => {
   return (
     <Layout>
-      <p>后浪辩护人主页</p>
+      <Hero />
 
     </Layout>
   )
