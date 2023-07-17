@@ -35,7 +35,7 @@ const Footer = ({ bottom }) => {
           </div>
 
           <StaticImage
-            src="../../images/houlang-logo.jpg"
+            src="../../images/houlang-logo-dark.jpg"
             alt="logo"
             className={footerContentMiddle}
             imgClassName={footerLogoImg}
