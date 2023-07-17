@@ -67,14 +67,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
   }
 
-  .footer-content-left, .footer-content-middle, .footer-content-right {
-    margin-top: 1rem;
+  .footer-content, .register {
+    font-size: 10px;
+  }
+
+  .footer-content-middle {
+    display: none;
   }
 
   .footer-content-left {
-    /* transform: translateX(-2%); */
+    margin: .6rem 0;
   }
   .footer-content-right {
     align-items: center;
@@ -82,7 +87,7 @@
   }
 
   .footer-content-right p, .footer-content-right a {
-    margin: 5px;
+    margin-top: .6rem;
     color: var(--text-color-gray);
   }
 }
