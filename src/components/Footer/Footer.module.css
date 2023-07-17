@@ -75,7 +75,7 @@
   }
 
   .footer-content-middle {
-    display: none;
+    display: none !important;
   }
 
   .footer-content-left {
