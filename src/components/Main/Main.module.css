@@ -1,7 +1,10 @@
 .main-wrapper {
   max-width: 970px;
+  width: 90%;
   margin: 0 auto;
+  margin-bottom: 50px;
   padding: 0 20px;
+  flex: 1;
 }
 
 .heading {
