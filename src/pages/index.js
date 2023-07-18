@@ -4,6 +4,7 @@ import Seo from "../components/seo";
 import Hero from "../components/Homepage/Hero";
 import ServicesIntro from "../components/Homepage/ServicesIntro";
 import FAQ from "../components/Homepage/FAQ";
+import WIP from "../components/Misc/WIP";
 
 const IndexPage = () => {
   return (
@@ -11,6 +12,7 @@ const IndexPage = () => {
       <Hero />
       <ServicesIntro />
       <FAQ />
+      <WIP />
     </Layout>
   );
 };
