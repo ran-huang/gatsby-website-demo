@@ -42,13 +42,25 @@
 
 @media screen and (max-width: 768px) {
   .services {
-    display: flex;
-    flex-wrap: wrap;
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .services {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(35%);
   }
 
   .service-item {
-    width: 120px;
+    margin-bottom: 0;
   }
 }
 
