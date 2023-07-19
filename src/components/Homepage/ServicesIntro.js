@@ -1,6 +1,6 @@
 import React from "react";
 import LinkButton from "../Button/LinkButton";
-import { wrapper, title, services, serviceItem, btnLearnMore } from "./ServicesIntro.module.css"
+import { wrapper, title, services, serviceItem } from "./ServicesIntro.module.css"
 
 const ServicesIntro = () => {
   return (
@@ -14,7 +14,7 @@ const ServicesIntro = () => {
         <div className={serviceItem}>企业法律风险防控</div>
         <div className={serviceItem}>监督应对</div>
       </div>
-      <LinkButton to="/practices" className={btnLearnMore}>了解更多</LinkButton>
+      <LinkButton to="/practices">了解更多</LinkButton>
     </div>
   )
 }

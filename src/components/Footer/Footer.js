@@ -1,16 +1,13 @@
 import React from "react";
 import {
-  footer,
   footerWrapper,
   footerContent,
   footerContentLeft,
   footerContentMiddle,
   footerLogoImg,
   footerContentRight,
-  copyright,
   footerBottom,
   register,
-  rightLineOne,
 } from "./Footer.module.css";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
@@ -27,7 +24,7 @@ const FooterBottom = () => {
 
 const Footer = ({ bottom }) => {
   return (
-    <footer class={footer}>
+    <footer>
       <div className={footerWrapper}>
         <div className={footerContent}>
           <div className={footerContentLeft}>
@@ -42,12 +39,12 @@ const Footer = ({ bottom }) => {
           />
 
           <div className={footerContentRight}>
-            <div className={rightLineOne}>
+            <div>
               <Link to="/">隐私政策</Link>|
               <Link to="/">使用条款和法律声明</Link>
             </div>
 
-            <p className={copyright}>
+            <p>
               id velit deserunt © {new Date().getFullYear()}
             </p>
           </div>

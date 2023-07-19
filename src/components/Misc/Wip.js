@@ -1,7 +1,7 @@
 import React from "react";
-import { wip, wipIcon } from "./WIP.module.css";
+import { wip, wipIcon } from "./Wip.module.css";
 
-const WIP = () => {
+const Wip = () => {
   return (
     <div className={wip}>
       <h1>Work in Progress</h1>
@@ -11,4 +11,4 @@ const WIP = () => {
   );
 }
 
-export default WIP;
+export default Wip;

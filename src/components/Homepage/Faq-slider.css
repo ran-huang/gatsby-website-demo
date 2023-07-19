@@ -1,0 +1,11 @@
+.slick-dots-custom {
+  bottom: -45px !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-arrow {
+    display: none !important;
+  }
+}

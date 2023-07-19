@@ -1,16 +1,17 @@
 import * as React from "react";
 import Layout from "../../components/layout/layout";
 import Seo from "../../components/seo";
+import Main from "../../components/Main/Main";
 import { Link, graphql } from "gatsby";
-import WIP from "../../components/Misc/WIP";
+import Wip from "../../components/Misc/Wip";
 
 const Cases = ({ data }) => {
   return (
-    <Layout pageTitle="My Cases">
-      <WIP />
-      {
-        data.allMdx.nodes.map((node) => (
-          <article key= {node.id}>
+    <Layout>
+      <Main>
+        <Wip />
+        {data.allMdx.nodes.map((node) => (
+          <article key={node.id}>
             <h2>
               <Link to={`/cases/${node.frontmatter.slug}`}>
                 {node.frontmatter.title}
@@ -19,8 +20,8 @@ const Cases = ({ data }) => {
             <p>Posted: {node.frontmatter.date}</p>
             <p>{node.excerpt}</p>
           </article>
-        ))
-      }
+        ))}
+      </Main>
     </Layout>
   );
 };
@@ -29,8 +30,8 @@ export const query = graphql`
   query {
     allMdx(
       sort: { frontmatter: { date: DESC } }
-      filter: { internal: { contentFilePath: {regex: "/(cases)/"}} }
-      ) {
+      filter: { internal: { contentFilePath: { regex: "/(cases)/" } } }
+    ) {
       nodes {
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
@@ -44,6 +45,6 @@ export const query = graphql`
   }
 `;
 
-export const Head = () => <Seo title="My Cases" />;
+export const Head = () => <Seo title="成功案例" />;
 
 export default Cases;
