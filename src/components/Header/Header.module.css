@@ -2,6 +2,7 @@
 
 .nav-bar {
   height: 80px;
+  z-index: 999;
 }
 
 .nav-bar-wrapper {
@@ -85,7 +86,6 @@
     background-color: #fefefe;
     /* transform: translateX(-2%); */
     transition: all 0.3s ease-in-out;
-    z-index: 1;
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
     opacity: 1;
   }

@@ -5,6 +5,7 @@ import Main from "../components/Main/Main";
 import Hero from "../components/Homepage/Hero";
 import ServicesIntro from "../components/Homepage/ServicesIntro";
 import Faq from "../components/Homepage/Faq";
+import Cases from "../components/Homepage/Cases";
 import Wip from "../components/Misc/Wip";
 
 const IndexPage = () => {
@@ -15,6 +16,9 @@ const IndexPage = () => {
         <ServicesIntro />
       </Main>
       <Faq />
+      <Main>
+        <Cases />
+      </Main>
       <Wip />
     </Layout>
   );
