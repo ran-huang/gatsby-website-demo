@@ -8,6 +8,7 @@ import {
   footerContentRight,
   footerBottom,
   register,
+  copyright,
 } from "./Footer.module.css";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
@@ -15,6 +16,9 @@ import { StaticImage } from "gatsby-plugin-image";
 const FooterBottom = () => {
   return (
     <div className={footerBottom}>
+      <div>
+        <Link to="/">隐私政策</Link>|<Link to="/">使用条款和法律声明</Link>
+      </div>
       <p className={register}>
         京ICP备05084598号 | 京公网安备: 11010502038372号
       </p>
@@ -28,7 +32,15 @@ const Footer = ({ bottom }) => {
       <div className={footerWrapper}>
         <div className={footerContent}>
           <div className={footerContentLeft}>
-            <a href="/">小红书</a>|<Link to="/professionals">关于我们</Link>
+            <a href="/">公众号</a>
+            |
+            <a href="/">小红书</a>
+            |
+            <Link to="/professionals">关于我们</Link>
+            |
+            <div className={copyright}>
+              id velit deserunt © {new Date().getFullYear()}
+            </div>
           </div>
 
           <StaticImage
@@ -37,17 +49,6 @@ const Footer = ({ bottom }) => {
             className={footerContentMiddle}
             imgClassName={footerLogoImg}
           />
-
-          <div className={footerContentRight}>
-            <div>
-              <Link to="/">隐私政策</Link>|
-              <Link to="/">使用条款和法律声明</Link>
-            </div>
-
-            <p>
-              id velit deserunt © {new Date().getFullYear()}
-            </p>
-          </div>
         </div>
       </div>
 
