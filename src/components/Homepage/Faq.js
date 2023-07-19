@@ -85,7 +85,7 @@ const SimpleSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     swipe: true,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 5000,
     pauseOnDotsHover: true,
     pauseOnHover: true,
@@ -102,7 +102,7 @@ const SimpleSlider = () => {
           return (
             <div className={sliderItem} key={index}>
               <div className={sliderTitle}>{faq.question}</div>
-              <p className={sliderText} dangerouslySetInnerHTML={{ __html: faq.answer.replace(/\n/g, "<br>") }}></p>
+              <p className={sliderText} dangerouslySetInnerHTML={{ __html: faq.answer.replace(/\n/g, "<br><br>") }}></p>
             </div>
           )
         })
