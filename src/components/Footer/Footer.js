@@ -5,7 +5,6 @@ import {
   footerContentLeft,
   footerContentMiddle,
   footerLogoImg,
-  footerContentRight,
   footerBottom,
   register,
   copyright,

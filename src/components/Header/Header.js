@@ -11,6 +11,7 @@ import {
   showMenu,
   split,
 } from "./Header.module.css";
+import { headerItem } from "../../static/global.json";
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -35,6 +36,22 @@ const Header = () => {
           ☰
         </div>
         <div className={navbarOpen ? `${navUl} ${showMenu}` : `${navUl}`}>
+
+          {
+            headerItem.map((item, index) => {
+              return (
+                <Link
+                  to={item.path}
+                  activeClassName={active}
+                  className={navItem}
+                  key={index}
+                >
+                  {item.text}
+                </Link>
+              )
+            })
+          }
+{/*
           <Link
             to="/professionals"
             activeClassName={active}
@@ -68,7 +85,7 @@ const Header = () => {
 
           <Link to="/contact" activeClassName={active} className={navItem}>
             联系我们
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>

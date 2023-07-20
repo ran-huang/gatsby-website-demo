@@ -1,18 +1,20 @@
 import React from "react";
 import LinkButton from "../Button/LinkButton";
 import { wrapper, title, services, serviceItem } from "./ServicesIntro.module.css"
+import { serviceList } from "../../static/homepage.json";
 
 const ServicesIntro = () => {
   return (
     <div className={wrapper}>
       <h2 className={title}>服务简介</h2>
       <div className={services}>
-        <div className={serviceItem}>刑事业务</div>
-        <div className={serviceItem}>公司商事</div>
-        <div className={serviceItem}>企业合规</div>
-        <div className={serviceItem}>并购&重组</div>
-        <div className={serviceItem}>企业法律风险防控</div>
-        <div className={serviceItem}>监督应对</div>
+        {
+          serviceList.map((service, index) => {
+            return (
+              <div className={serviceItem} key={index}>{service}</div>
+            )
+          })
+        }
       </div>
       <LinkButton to="/practices">了解更多</LinkButton>
     </div>

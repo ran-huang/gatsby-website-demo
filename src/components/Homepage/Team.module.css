@@ -1,0 +1,62 @@
+.team-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.team-title {
+  margin-bottom: 50px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.people-list {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.people-card {
+  width: 50%;
+  max-width: 200px;
+  padding: 20px 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.people-card:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.people-name {
+  margin: 20px 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.people-title {
+  margin-bottom: 10px;
+  color: var(--text-color-gray);
+}
+
+.people-desc {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  .people-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .people-card {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+}
