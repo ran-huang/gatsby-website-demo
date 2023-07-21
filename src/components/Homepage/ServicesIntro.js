@@ -1,7 +1,7 @@
 import React from "react";
 import LinkButton from "../Button/LinkButton";
 import { wrapper, title, services, serviceItem } from "./ServicesIntro.module.css"
-import { serviceList } from "../../static/homepage.json";
+import { serviceList } from "../../static/data.json";
 
 const ServicesIntro = () => {
   return (

@@ -6,17 +6,7 @@ import '@fontsource/noto-sans-sc';
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-const Layout = ({ pageTitle, children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `);
-
+const Layout = ({ children }) => {
   return (
     <div className={container}>
       <Header />

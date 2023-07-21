@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { cases, caseTitle, caseContainer, caseItem, caseItemDecor, caseItemTitle, caseItemContent } from './Cases.module.css';
-import { caseList } from "../../static/homepage.json";
+import { cases, caseTitle, caseContainer, caseItem, caseItemTitle, caseItemContent } from './Cases.module.css';
+import { caseList } from "../../static/data.json";
+import DecorLine from '../Misc/DecorLine';
 
 const CaseItem = ({ caseInfo }) => {
   return (
     <div className={caseItem}>
       <Link to={caseInfo.link} >
-        <div className={caseItemDecor}></div>
+        <DecorLine />
         <div className={caseItemTitle}>{caseInfo.title}</div>
         <div className={caseItemContent}>
         {caseInfo.content}

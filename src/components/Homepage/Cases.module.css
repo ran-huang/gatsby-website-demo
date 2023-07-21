@@ -33,15 +33,6 @@
   transform: translateY(-2%);
 }
 
-.case-item-decor {
-  display: inline-block;
-  width: 30%;
-  height: 0;
-  margin-bottom: 10px;
-  border-bottom: 3px solid var(--primary-color);
-  border-radius: 5px;
-}
-
 .case-item-title {
   font-size: 15px;
   line-height: 20px;

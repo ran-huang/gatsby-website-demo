@@ -6,8 +6,9 @@ export const insertBreaks = (text) => {
       {
       text.split('\n').map((line, index) => (
         <React.Fragment key={index}>
+          <div style={{marginBottom: ".4em"}}>
           {line}
-          <br />
+          </div>
         </React.Fragment>
       ))
       }

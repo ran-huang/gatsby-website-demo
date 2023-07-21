@@ -3,9 +3,9 @@ import LinkButton from '../Button/LinkButton';
 import { StaticImage } from 'gatsby-plugin-image';
 import { teamContainer, teamTitle, peopleList, peopleCard,peopleImg, peopleName, peopleTitle, peopleDesc} from "./Team.module.css";
 import { insertBreaks } from '../../utils/helper';
-import { team } from "../../static/homepage.json";
+import { team } from "../../static/data.json";
 
-const [zcq, zy] = team;
+const [zy, zcq] = team;
 
 const Team = () => {
   return (

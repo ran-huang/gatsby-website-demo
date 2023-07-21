@@ -14,13 +14,14 @@ import "./Faq-slider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
-import { faqList } from "../../static/homepage.json";
+import { faqList } from "../../static/data.json";
 import { insertBreaks } from "../../utils/helper";
 
 const arrowStyle = {
-  width: "25px",
-  height: "25px",
-  color: "#333",
+  width: "50px",
+  height: "50px",
+  color: "var(--primary-color)",
+  opacity: "0.8",
 };
 
 function NextArrow(props) {
@@ -29,7 +30,7 @@ function NextArrow(props) {
   const styles = {
     ...style,
     ...arrowStyle,
-    right: "-50px",
+    right: "-80px",
   };
   return (
     <BsArrowRightCircle
@@ -45,7 +46,7 @@ function PrevArrow(props) {
   const styles = {
     ...style,
     ...arrowStyle,
-    left: "-50px",
+    left: "-80px",
   };
   return (
     <BsArrowLeftCircle
