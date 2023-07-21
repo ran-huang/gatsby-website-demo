@@ -10,10 +10,8 @@ import {
   contact,
   stepperImg,
   stepText,
-  step,
-  step1,
-  step2,
-  step3
+  stepperImgVertical,
+  step
 } from "./Process.module.css";
 
 const Process = () => {
@@ -31,14 +29,15 @@ const Process = () => {
 
         <div className={stepper}>
           <StaticImage src="../../images/homepage-stepper.jpg" alt="流程" className={stepperImg} />
+          <StaticImage src="../../images/homepage-stepper-vertical.png" alt="流程" className={stepperImgVertical} />
           <div className={stepText}>
-            <div className={`${step} ${step1}`}>
+            <div className={step}>
               通过电话、面谈等方式了解基本情况和您的需求
             </div>
-            <div className={`${step} ${step2}`}>
+            <div className={step}>
               确定服务方案，签署委托合同、委托书等文件
             </div>
-            <div className={`${step} ${step3}`}>
+            <div className={step}>
               根据工作需要，开展会见、申请取保、合规整改、无罪辩护等工作
             </div>
           </div>

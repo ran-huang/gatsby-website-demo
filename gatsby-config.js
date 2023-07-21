@@ -7,7 +7,14 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaults: {
+          quality: 100,
+        }
+      }
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {

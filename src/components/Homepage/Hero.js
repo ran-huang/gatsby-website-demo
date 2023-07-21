@@ -27,7 +27,7 @@ const Hero = () => {
       </div>
 
       <StaticImage
-        src="../../images/genius-law-comment.jpg"
+        src="../../images/genius-law-comment.png"
         alt="hero"
         className={heroRight}
         imgClassName={heroRightImg}
