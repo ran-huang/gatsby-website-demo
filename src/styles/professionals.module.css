@@ -144,9 +144,8 @@
 }
 
 .article-divider {
-  /* height: 100%; */
-  margin: 0 20px;
-  border: 1px solid var(--primary-color);
+  margin: 0 20px 0 21px;
+  border-right: 1px solid var(--primary-color);
 }
 
 /* for mobile view */
@@ -193,6 +192,24 @@
   .banner-phone, .banner-email {
     font-size: 10px;
     line-height: 20px;
+  }
+
+  .article-container {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .article-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto 40px;
+  }
+
+  .article-divider {
+    margin: 21px 0 20px;
+    width: 100%;
+    border-bottom: 1px solid var(--primary-color);
   }
 }
 
