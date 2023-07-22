@@ -10,7 +10,7 @@ import {
 } from "./Hero.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import LinkButton from "../Button/LinkButton";
-import { heroText } from "../../static/data.json";
+import { heroText } from "../../data/data.json";
 import { insertBreaks } from "../../utils/helper";
 
 const Hero = () => {

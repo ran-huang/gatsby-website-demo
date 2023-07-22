@@ -11,7 +11,7 @@ import {
   showMenu,
   split,
 } from "./Header.module.css";
-import { headerItem } from "../../static/global.json";
+import { headerItem } from "../../data/global.json";
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);

@@ -8,7 +8,6 @@ import Faq from "../components/Homepage/Faq";
 import Cases from "../components/Homepage/Cases";
 import Process from "../components/Homepage/Process";
 import Team from "../components/Homepage/Team";
-import Wip from "../components/Misc/Wip";
 
 const IndexPage = () => {
   return (

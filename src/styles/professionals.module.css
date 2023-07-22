@@ -15,7 +15,6 @@
   align-items: end;
   margin: 0 auto;
   width: 80%;
-  transform: translateY(2px);
 }
 
 .banner-left {
@@ -41,8 +40,8 @@
 
 .banner-resume {
   margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .banner-phone, .banner-email {
@@ -50,6 +49,10 @@
   align-items: center;
   font-size: 14px;
   line-height: 25px;
+}
+
+.banner-avatar {
+  min-height: 200px;
 }
 
 /* member details */
@@ -146,3 +149,56 @@
   border: 1px solid var(--primary-color);
 }
 
+/* for mobile view */
+
+@media screen and (max-width: 768px) {
+  .team-member-container:first-of-type {
+    margin-top: 80px;
+  }
+
+  .banner-name {
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+
+  .banner-member-title {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+
+  .banner-phone, .banner-email {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner-container {
+    width: 95%;
+  }
+  .banner-left {
+    margin-right: 25px;
+  }
+  .banner-name {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .banner-member-title {
+    font-size: 16px;
+  }
+  .banner-resume {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .banner-phone, .banner-email {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .banner-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

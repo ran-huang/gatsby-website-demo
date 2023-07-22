@@ -14,7 +14,7 @@ import "./Faq-slider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
-import { faqList } from "../../static/data.json";
+import { faqList } from "../../data/data.json";
 import { insertBreaks } from "../../utils/helper";
 
 const arrowStyle = {

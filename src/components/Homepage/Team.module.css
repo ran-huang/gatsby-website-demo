@@ -22,7 +22,7 @@
 
 .people-card {
   width: 50%;
-  max-width: 200px;
+  max-width: 220px;
   padding: 20px 30px;
   transition: all 0.3s ease-in-out;
 }
