@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "gatsby";
+import React, { useState } from 'react';
+import { Link } from 'gatsby';
 import {
   home,
   navBarWrapper,
@@ -9,9 +9,8 @@ import {
   navItem,
   hamburger,
   showMenu,
-  split,
-} from "./Header.module.css";
-import { headerItem } from "../../data/global.json";
+} from './Header.module.css';
+import { headerItem } from '../../data/global.json';
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -36,22 +35,19 @@ const Header = () => {
           ☰
         </div>
         <div className={navbarOpen ? `${navUl} ${showMenu}` : `${navUl}`}>
-
-          {
-            headerItem.map((item, index) => {
-              return (
-                <Link
-                  to={item.path}
-                  activeClassName={active}
-                  className={navItem}
-                  key={index}
-                >
-                  {item.text}
-                </Link>
-              )
-            })
-          }
-{/*
+          {headerItem?.map((item, index) => {
+            return (
+              <Link
+                to={item.path}
+                activeClassName={active}
+                className={navItem}
+                key={index}
+              >
+                {item.text}
+              </Link>
+            );
+          })}
+          {/*
           <Link
             to="/professionals"
             activeClassName={active}

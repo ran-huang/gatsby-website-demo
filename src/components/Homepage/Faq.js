@@ -1,5 +1,5 @@
-import React from "react";
-import Slider from "react-slick";
+import React from 'react';
+import Slider from 'react-slick';
 import {
   faqWrapper,
   faqContainer,
@@ -8,20 +8,19 @@ import {
   sliderItem,
   sliderTitle,
   sliderText,
-  sliderContainer,
-} from "./Faq.module.css";
-import "./Faq-slider.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
-import { faqList } from "../../data/data.json";
-import { insertBreaks } from "../../utils/helper";
+} from './Faq.module.css';
+import './Faq-slider.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
+import { faqList } from '../../data/data.json';
+import { insertBreaks } from '../../utils/helper';
 
 const arrowStyle = {
-  width: "50px",
-  height: "50px",
-  color: "var(--primary-color)",
-  opacity: "0.8",
+  width: '50px',
+  height: '50px',
+  color: 'var(--primary-color)',
+  opacity: '0.8',
 };
 
 function NextArrow(props) {
@@ -30,7 +29,7 @@ function NextArrow(props) {
   const styles = {
     ...style,
     ...arrowStyle,
-    right: "-80px",
+    right: '-80px',
   };
   return (
     <BsArrowRightCircle
@@ -46,7 +45,7 @@ function PrevArrow(props) {
   const styles = {
     ...style,
     ...arrowStyle,
-    left: "-80px",
+    left: '-80px',
   };
   return (
     <BsArrowLeftCircle
@@ -71,7 +70,7 @@ const SimpleSlider = () => {
     pauseOnHover: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    dotsClass: "slick-dots-custom slick-dots",
+    dotsClass: 'slick-dots-custom slick-dots',
   };
 
   return (
@@ -93,7 +92,7 @@ const FAQ = () => {
     <div className={faqWrapper}>
       <div className={faqContainer}>
         <h2 className={title}>常见问题</h2>
-        <div className={sliderContainer}>
+        <div>
           {/* <PrevArrow /> */}
           <SimpleSlider />
           {/* <NextArrow /> */}

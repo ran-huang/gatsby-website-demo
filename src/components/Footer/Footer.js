@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   footerWrapper,
   footerContent,
@@ -7,10 +7,9 @@ import {
   footerLogoImg,
   footerBottom,
   register,
-  copyright,
-} from "./Footer.module.css";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+} from './Footer.module.css';
+import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const FooterBottom = () => {
   return (
@@ -31,15 +30,9 @@ const Footer = ({ bottom }) => {
       <div className={footerWrapper}>
         <div className={footerContent}>
           <div className={footerContentLeft}>
-            <a href="/">公众号</a>
-            |
-            <a href="/">小红书</a>
-            |
-            <Link to="/professionals">关于我们</Link>
-            |
-            <div className={copyright}>
-              id velit deserunt © {new Date().getFullYear()}
-            </div>
+            <a href="/">公众号</a>|<a href="/">小红书</a>|
+            <Link to="/professionals">关于我们</Link>|
+            <div>id velit deserunt © {new Date().getFullYear()}</div>
           </div>
 
           <StaticImage

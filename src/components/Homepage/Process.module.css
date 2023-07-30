@@ -42,7 +42,8 @@
 }
 
 .stepper-img-vertical {
-  display: none;
+  visibility: hidden;
+  height: 0;
 }
 
 .step-text {
@@ -65,12 +66,15 @@
   }
 
   .stepper-img {
-    display: none;
+    visibility: hidden;
+    width: 0;
   }
 
   .stepper-img-vertical {
     display: block;
     width: 20px;
+    height: unset;
+    visibility: unset;
   }
 
   .step-text {
