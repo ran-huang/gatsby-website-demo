@@ -1,9 +1,9 @@
 import React from "react";
-import { mainWrapper } from "./Main.module.css";
+import * as styles from "./Main.module.css";
 
 const Main = ({ children }) => {
   return (
-    <div className={mainWrapper}>
+    <div className={styles.mainWrapper}>
         {children}
     </div>
   );

@@ -1,7 +1,8 @@
 import React from "react";
-import { wip, wipIcon } from "./Wip.module.css";
+import * as styles from "./Wip.module.css";
 
 const Wip = () => {
+  const { wip, wipIcon } = styles;
   return (
     <div className={wip}>
       <h1>Work in Progress</h1>

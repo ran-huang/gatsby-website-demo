@@ -1,14 +1,14 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
-import Layout from "../components/layout/layout";
-import Seo from "../components/seo";
-import * as styles from "../styles/professionals.module.css";
-import LinkButton from "../components/Button/LinkButton";
-import { insertBreaks } from "../utils/helper";
+import Layout from "../../components/layout/layout";
+import Seo from "../../components/seo";
+import * as styles from "./professionals.module.css";
+import LinkButton from "../../components/Button/LinkButton";
+import { insertBreaks } from "../../utils/helper";
 import { BiPhoneCall } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
-import DecorLine from "../components/Misc/DecorLine";
+import DecorLine from "../../components/Misc/DecorLine";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const query = graphql`
@@ -63,7 +63,7 @@ const MemberBanner = ({ memberData, imgNodes }) => {
           </div>
         </div>
 
-        <div className={styles.bannerRight}>
+        <div>
           <GatsbyImage
             className={styles.bannerAvatar}
             image={avatarImg}

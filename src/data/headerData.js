@@ -1,5 +1,4 @@
-{
-  "headerItem": [
+const headerItem = [
     {
       "text": "律师团队",
       "path": "/professionals"
@@ -21,4 +20,5 @@
       "path": "/contact"
     }
   ]
-}
+
+export default headerItem;

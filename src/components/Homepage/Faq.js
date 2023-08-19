@@ -13,7 +13,7 @@ import './Faq-slider.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
-import { faqList } from '../../data/data.json';
+import { faqList } from '../../data/homePageData';
 import { insertBreaks } from '../../utils/helper';
 
 const arrowStyle = {
@@ -79,7 +79,7 @@ const SimpleSlider = () => {
         return (
           <div className={sliderItem} key={index}>
             <div className={sliderTitle}>{faq.question}</div>
-            <p className={sliderText}>{insertBreaks(faq.answer)}</p>
+            <div className={sliderText}>{insertBreaks(faq.answer)}</div>
           </div>
         );
       })}

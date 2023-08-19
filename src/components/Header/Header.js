@@ -1,16 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
-import {
-  home,
-  navBarWrapper,
-  navBar,
-  navUl,
-  active,
-  navItem,
-  hamburger,
-  showMenu,
-} from './Header.module.css';
-import { headerItem } from '../../data/global.json';
+import * as styles from './Header.module.css';
+import headerItem from '../../data/headerData';
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -18,6 +9,19 @@ const Header = () => {
   const hamburgerClickHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
+
+  const {
+    home,
+    navBarWrapper,
+    navBar,
+    navUl,
+    active,
+    navItem,
+    hamburger,
+    showMenu,
+  } = styles;
+
+  // const headerItem = { globalData }
 
   return (
     <nav className={navBar}>
@@ -42,46 +46,12 @@ const Header = () => {
                 activeClassName={active}
                 className={navItem}
                 key={index}
+                partiallyActive={true}
               >
                 {item.text}
               </Link>
             );
           })}
-          {/*
-          <Link
-            to="/professionals"
-            activeClassName={active}
-            className={navItem}
-          >
-            律师团队
-          </Link>
-          <div className={split}></div>
-          <Link to="/practices" activeClassName={active} className={navItem}>
-            业务领域
-          </Link>
-          <div className={split}></div>
-          <Link
-            to="/cases"
-            activeClassName={active}
-            className={navItem}
-            partiallyActive={true}
-          >
-            成功案例
-          </Link>
-          <div className={split}></div>
-          <Link
-            to="/publications"
-            activeClassName={active}
-            className={navItem}
-            partiallyActive={true}
-          >
-            专业视点
-          </Link>
-          <div className={split}></div>
-
-          <Link to="/contact" activeClassName={active} className={navItem}>
-            联系我们
-          </Link> */}
         </div>
       </div>
     </nav>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { cases, caseTitle, caseContainer, caseItem, caseItemTitle, caseItemContent } from './Cases.module.css';
-import { caseList } from "../../data/data.json";
+import { caseList } from "../../data/homePageData";
 import DecorLine from '../Misc/DecorLine';
 
 const CaseItem = ({ caseInfo }) => {

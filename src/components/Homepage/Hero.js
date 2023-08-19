@@ -10,7 +10,7 @@ import {
 } from "./Hero.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import LinkButton from "../Button/LinkButton";
-import { heroText } from "../../data/data.json";
+import { heroText } from "../../data/homePageData";
 import { insertBreaks } from "../../utils/helper";
 
 const Hero = () => {
@@ -19,9 +19,9 @@ const Hero = () => {
       <div className={heroLeft}>
         <div className={heroLeftContent}>
           <h1 className={heading}>{heroText.title}</h1>
-          <p className={description}>
+          <div className={description}>
             { insertBreaks(heroText.description) }
-          </p>
+          </div>
         </div>
         <LinkButton to='/contact'>联系我们</LinkButton>
       </div>
