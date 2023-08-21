@@ -19,7 +19,6 @@ export const query = graphql`
         frontmatter {
           title
           slug
-          icon
         }
       }
     }
@@ -27,19 +26,19 @@ export const query = graphql`
 `;
 
 const PracticePage = ( { data }) => {
-  const getIcon = (icon) => {
-    switch (icon) {
-      case 'criminal':
+  const getIcon = (slug) => {
+    switch (slug) {
+      case 'defense':
         return <VscLaw className={styles.cardIcon} />;
       case 'compliance':
         return <IoIosBusiness className={styles.cardIcon} />;
-      case 'risk':
+      case 'risks':
         return <FaBuildingShield className={styles.cardIcon} />
-      case 'corporate':
+      case 'business':
         return <FaBusinessTime className={styles.cardIcon} />;
-      case 'merger':
+      case 'mergers-and-acquisitions':
         return <FaFileSignature className={styles.cardIcon} />;
-      case 'regulatory':
+      case 'solutions':
         return <FaShieldAlt className={styles.cardIcon} />;
       default:
         return <VscLaw className={styles.cardIcon} />;
@@ -56,7 +55,7 @@ const PracticePage = ( { data }) => {
               return (
                 <div className={styles.card}>
                   <Link to={`/practices/${node.frontmatter.slug}`} className={styles.cardLink}>
-                    {getIcon(node.frontmatter.icon)}
+                    {getIcon(node.frontmatter.slug)}
                     <div className={styles.cardName}>{node.frontmatter.title}</div>
                   </Link>
                 </div>
