@@ -4,10 +4,10 @@ import Layout from '../../components/layout/layout';
 import Main from '../../components/Main/Main';
 import * as styles from './practices.module.css';
 import { Link, graphql } from 'gatsby';
-import { GiHandcuffs } from 'react-icons/gi';
 import { IoIosBusiness } from 'react-icons/io';
-import { FaBalanceScale, FaFileSignature, FaShieldAlt } from 'react-icons/fa';
-import { MdOutlineBusiness } from 'react-icons/md';
+import { FaFileSignature, FaShieldAlt, FaBusinessTime } from 'react-icons/fa';
+import { FaBuildingShield } from 'react-icons/fa6';
+import { VscLaw } from 'react-icons/vsc';
 
 export const query = graphql`
   query {
@@ -30,19 +30,19 @@ const PracticePage = ( { data }) => {
   const getIcon = (icon) => {
     switch (icon) {
       case 'criminal':
-        return <GiHandcuffs className={styles.cardIcon} />;
+        return <VscLaw className={styles.cardIcon} />;
       case 'compliance':
         return <IoIosBusiness className={styles.cardIcon} />;
       case 'risk':
-        return <FaBalanceScale className={styles.cardIcon} />
+        return <FaBuildingShield className={styles.cardIcon} />
       case 'corporate':
-        return <MdOutlineBusiness className={styles.cardIcon} />;
+        return <FaBusinessTime className={styles.cardIcon} />;
       case 'merger':
         return <FaFileSignature className={styles.cardIcon} />;
       case 'regulatory':
         return <FaShieldAlt className={styles.cardIcon} />;
       default:
-        return <FaBalanceScale className={styles.cardIcon} />;
+        return <VscLaw className={styles.cardIcon} />;
     }
   }
 
