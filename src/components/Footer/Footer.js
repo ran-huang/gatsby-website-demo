@@ -31,7 +31,7 @@ const Footer = ({ bottom }) => {
         <div className={footerContent}>
           <div className={footerContentLeft}>
             <a href="/">公众号</a>|<a href="/">小红书</a>|
-            <Link to="/professionals">关于我们</Link>|
+            <Link to="/contact">联系我们</Link>|
             <div>id velit deserunt © {new Date().getFullYear()}</div>
           </div>
 
