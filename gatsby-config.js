@@ -1,6 +1,9 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: "后浪辩护人",
@@ -52,5 +55,23 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-styled-components"
+    },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@src": path.resolve(__dirname, 'src'),
+          "@components": path.resolve(__dirname, 'src/components'),
+          "@pages": path.resolve(__dirname, 'src/pages'),
+          "@images": path.resolve(__dirname, 'src/images'),
+          "@data": path.resolve(__dirname, 'src/data'),
+          "@styles": path.resolve(__dirname, 'src/styles'),
+          "@utils": path.resolve(__dirname, 'src/utils'),
+        },
+        extensions: []
+      }
+    }
   ],
 }

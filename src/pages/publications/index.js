@@ -1,9 +1,9 @@
 import * as React from "react";
-import Layout from "../../components/layout/layout";
-import Seo from "../../components/seo";
-import Main from "../../components/Main/Main";
+import Layout from "@components/layout/layout";
+import Seo from "@components/seo";
+import Main from "@components/Main/Main";
 import { Link, graphql } from "gatsby";
-import Wip from "../../components/Misc/Wip";
+import Wip from "@components/Misc/Wip";
 
 const BlogPage = ({ data }) => {
   return (

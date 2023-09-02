@@ -21,6 +21,7 @@
   font-size: 20px;
   font-weight: bold;
 }
+
 .mdx-content h2::before {
   content: "";
   position: absolute;
@@ -34,7 +35,8 @@
   border-radius: 5px;
 }
 
-.mdx-content p, .mdx-content li {
+.mdx-content p,
+.mdx-content li {
   font-size: 14px;
   line-height: 25px;
 }
