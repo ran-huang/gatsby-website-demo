@@ -1,10 +1,11 @@
 import * as React from 'react';
-import Layout from '../../components/layout/layout';
-import Seo from '../../components/seo';
 import { graphql } from 'gatsby';
-import Main from '../../components/Main/Main';
+
+import Layout from '@components/layout/layout';
+import Seo from '@components/seo';
+import Main from '@components/Main/Main';
 import * as styles from './practicePage.module.css';
-import PracticesSideBar from '../../components/SideBar/PracticesSideBar';
+import PracticesSideBar from '@components/SideBar/PracticesSideBar';
 
 const PracticePage = ({ data, children }) => {
   return (
