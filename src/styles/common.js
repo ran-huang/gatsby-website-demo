@@ -5,4 +5,5 @@ export const textStyles = {
 
 export const colorStyles = {
   primaryColor: '#16264C',
+  secondaryColor: '#e6e6e6',
 }
