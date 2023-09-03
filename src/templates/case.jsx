@@ -5,19 +5,15 @@ import Layout from '@components/layout/layout';
 import Seo from '@components/seo';
 import Main from '@components/Main/Main';
 import Article from '@components/Article';
-import PageNav from '@components/Nav/pageNav';
 
 const CasePage = ({ data, children }) => {
   const { title, slug } = data.mdx.frontmatter;
-  // const currentNode = data.allMdx?.edges?.filter((edge) => edge?.node?.frontmatter?.slug == slug)[0];
-  // const { previous = {}, next = {} } = currentNode?.frontmatter;
+  const { previous = {}, next = {} } = data.allMdx?.edges?.filter((edge) => edge?.node?.frontmatter?.slug == slug)[0] || {};
 
   return (
     <Layout pageTitle={title}>
       <Main>
-
-        <Article>{children}</Article>
-        {/* <PageNav previous={previous} next={next} /> */}
+        <Article type="case" slug={slug} previous={previous} next={next}>{children}</Article>
       </Main>
     </Layout>
   );
@@ -29,6 +25,30 @@ export const query = graphql`
       frontmatter {
         title
         slug
+      }
+    }
+    allMdx(
+      filter: {internal: {contentFilePath: {regex: "/(cases)/"}}}
+      sort: {frontmatter: {date: ASC}}
+    ) {
+      edges {
+        next {
+          frontmatter {
+            title
+            slug
+          }
+        }
+        previous {
+          frontmatter {
+            slug
+            title
+          }
+        }
+        node {
+          frontmatter {
+            slug
+          }
+        }
       }
     }
   }
