@@ -1,26 +1,28 @@
-import * as React from "react";
-import Layout from "@components/layout/layout";
-import Seo from "@components/seo";
-import Main from "@components/Main/Main";
-import { Link, graphql } from "gatsby";
-import Wip from "@components/Misc/Wip";
+import * as React from 'react';
+import { graphql } from 'gatsby';
 
-const BlogPage = ({ data }) => {
+import Layout from '@components/layout/layout';
+import Seo from '@components/seo';
+import Main from '@components/Main/Main';
+import PublicationWrapper from './style.js';
+import PublicationCard from '@components/Card/publication-card/index.jsx';
+
+const Publications = ({ data }) => {
+
   return (
-    <Layout pageTitle="My Blog Posts">
+    <Layout>
       <Main>
-        <Wip />
-        {data.allMdx.nodes.map((node) => (
-          <article key={node.id}>
-            <h2>
-              <Link to={`/publications/${node.frontmatter.slug}`}>
-                {node.frontmatter.title}
-              </Link>
-            </h2>
-            <p>Posted: {node.frontmatter.date}</p>
-            <p>{node.excerpt}</p>
-          </article>
-        ))}
+        <PublicationWrapper>
+          <h1>专业视点</h1>
+          <div className="content">
+            {
+              data.allMdx.nodes.map((node, index) => (
+                <PublicationCard cardData={node} key={index}/>
+              ))
+            }
+          </div>
+
+        </PublicationWrapper>
       </Main>
     </Layout>
   );
@@ -34,17 +36,16 @@ export const query = graphql`
     ) {
       nodes {
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
+          date
           slug
+          title
+          author
         }
-        id
-        excerpt
       }
     }
   }
 `;
 
-export const Head = () => <Seo title="My Blog Posts" />;
+export const Head = () => <Seo title="专业视点" />;
 
-export default BlogPage;
+export default Publications;

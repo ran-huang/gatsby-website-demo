@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 const BreadcrumbWrapper = styled.div`
+  margin: 20px -30px;
   font-size: 12px;
 
   .arrow {

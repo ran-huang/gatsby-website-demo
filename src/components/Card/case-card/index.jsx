@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { FaFileAlt } from 'react-icons/fa';
 
 import CardWrapper from './style';
-import { Link } from 'gatsby';
 
 function CaseCard(props) {
   const { cardData } = props;
