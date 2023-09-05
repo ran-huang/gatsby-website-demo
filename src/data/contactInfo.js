@@ -4,4 +4,6 @@ const mailAddress = "123456789@gmail.com";
 
 const phoneNumber = "123-1234-1234";
 
-export default { officeAddress, mailAddress, phoneNumber };
+const contactInfo = { officeAddress, mailAddress, phoneNumber }
+
+export default contactInfo;

@@ -9,9 +9,9 @@ import {
   heroRightImg,
 } from "./Hero.module.css";
 import { StaticImage } from "gatsby-plugin-image";
-import LinkButton from "../Button/LinkButton";
-import { heroText } from "../../data/homePageData";
-import { insertBreaks } from "../../utils/helper";
+import LinkButton from "@components/Button/LinkButton";
+import { heroText } from "@data/homePageData";
+import { insertBreaks } from "@utils/helper";
 
 const Hero = () => {
   return (
