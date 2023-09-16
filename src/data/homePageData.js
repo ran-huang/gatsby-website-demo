@@ -34,32 +34,32 @@ const caseList = [
     {
       "title": "广东某公司高管涉嫌内幕交易合规整改案",
       "content": "最高检典型案例",
-      "link": "/"
+      "slug": "case-5"
     },
     {
       "title": "青海殷某某等35人涉嫌组织、领导、参加黑社会性质组织案",
       "content": "一、二审相继减轻量刑",
-      "link": "/"
+      "slug": "case-2"
     },
     {
       "title": "北京某小微企业涉税犯罪合规整改案",
       "content": "全案不起诉",
-      "link": "/"
+      "slug": "case-2"
     },
     {
       "title": "山东某上市环保企业涉嫌污染环境案事前分析及辩护",
       "content": "不起诉",
-      "link": "/"
+      "slug": "case-2"
     },
     {
       "title": "云南刘某某等10人涉嫌组织、领导、参加黑社会性质组织案",
       "content": "全案“摘黑”",
-      "link": "/"
+      "slug": "case-2"
     },
     {
       "title": "黑龙江曹某某等8人涉嫌恶势力犯罪案",
       "content": "保留全部财产",
-      "link": "/"
+      "slug": "case-2"
     }
   ]
 

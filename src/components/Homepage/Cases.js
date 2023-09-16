@@ -7,7 +7,7 @@ import DecorLine from '../Misc/DecorLine';
 const CaseItem = ({ caseInfo }) => {
   return (
     <div className={caseItem}>
-      <Link to={caseInfo.link} >
+      <Link to={`/cases/${caseInfo.slug}`} >
         <DecorLine />
         <div className={caseItemTitle}>{caseInfo.title}</div>
         <div className={caseItemContent}>

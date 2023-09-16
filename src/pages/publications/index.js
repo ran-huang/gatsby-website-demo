@@ -36,7 +36,7 @@ export const query = graphql`
     ) {
       nodes {
         frontmatter {
-          date
+          date(formatString: "YYYY-MM-DD")
           slug
           title
           author

@@ -22,7 +22,7 @@ export const query = graphql`
         career
         email
         featuredArticles {
-          path
+          slug
           title
         }
         phone
@@ -115,7 +115,7 @@ const MemberArticles = ({ memberData, number }) => {
                     <div className={styles.articleItemTitle}>
                       {article.title}
                     </div>
-                    <Link to={article.path} className={styles.articleItemLink}>
+                    <Link to={`/publications/${article.slug}`} className={styles.articleItemLink}>
                       了解更多
                       <BsArrowRight style={{ transform: "translateY(2px)" }} />
                     </Link>

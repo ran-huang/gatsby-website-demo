@@ -13,15 +13,15 @@
     "featuredArticles": [
       {
         "title": "文章 1 凑凑字数别当真看不懂算了",
-        "path": "/publications"
+        "slug": "my-first-post"
       },
       {
         "title": "文章 2 凑凑字数搞长一点方便测试极端情况下如何省略字数",
-        "path": "/publications"
+        "slug": "my-first-post"
       },
       {
         "title": "文章 3 都说了是凑字数还看什么看你真的很讨厌装什么装笑死也不是给你看的",
-        "path": "/publications"
+        "slug": "my-first-post"
       }
     ],
     "featuredCases": [
@@ -56,15 +56,15 @@
     "featuredArticles": [
       {
         "title": "文章 1 做人不能忘本，指每天晚上别忘了看看大本",
-        "path": "/publications"
+        "slug": "my-first-post"
       },
       {
         "title": "文章 2: this is sugar; I'm her daddy.",
-        "path": "/publications"
+        "slug": "my-first-post"
       },
       {
         "title": "文章 3 本蝙世界第一",
-        "path": "/publications"
+        "slug": "my-first-post"
       }
     ],
     "featuredCases": [
