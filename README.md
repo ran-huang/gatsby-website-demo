@@ -1,48 +1,32 @@
 # Website for Houlang
 
-
-
 ## 开发
-
-
 
 ```shell
 npm start
 ```
 
-
-
 ## 生产构建
-
-
 
 ```shell
 npm run build
 ```
 
-
-
 ## 更新
-
-
 
 ### 更新成功案件
 
 - 文件路径：`/content/cases/xxx.md`
 - 必要的 frontmatter：
-  - title：文章的标题，会显示在浏览器标签的名字。使用英文引号包裹
-  - result：案件的结果。使用英文引号包裹
-  - date：案件的时间，格式为 `2023-09-16`，不需要引号。
-  - slug：该案件页面的 URL，使用英文引号包裹。
-    - 必须使用小写字母或数字，不允许包含空格
-    - 例如将 `slug` 设置为 `this-is-a-case`，则该页面的最终 URL 为 `https://xxx.com/cases/this-is-a-case`。
-  - author：案件的作者（相关律师），格式为 `["name"]`，如果有多个人名，使用逗号分隔，如 `["name1", "name2"]`。
-  
-  
+    - title：文章的标题，会显示在浏览器标签的名字。使用英文引号包裹
+    - result：案件的结果。使用英文引号包裹
+    - date：案件的时间，格式为 `2023-09-16`，不需要引号。
+    - slug：该案件页面的 URL，使用英文引号包裹。
+        - 必须使用小写字母或数字，不允许包含空格
+        - 例如将 `slug` 设置为 `this-is-a-case`，则该页面的最终 URL 为 `https://xxx.com/cases/this-is-a-case`。
+    - author：案件的作者（相关律师），格式为 `["name"]`，如果有多个人名，使用逗号分隔，如 `["name1", "name2"]`。
 
 ### 更新业务领域
-
-
 
 - 文件路径：`/content/practices/xxx.md`
 
