@@ -1,6 +1,6 @@
 export const textStyles = {
   textSize: '14px',
-  lineHeight: '1.5',
+  lineHeight: '1.8',
 }
 
 export const colorStyles = {

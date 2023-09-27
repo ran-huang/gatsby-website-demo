@@ -45,6 +45,10 @@ const ArticleWrapper = styled.div`
     max-width: 800px;
     margin: 20px auto;
   }
+
+  hr {
+    margin: 30px 0;
+  }
 `;
 
 export default ArticleWrapper;
