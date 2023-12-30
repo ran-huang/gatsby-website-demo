@@ -47,9 +47,9 @@ const ContactPage = () => {
               <div className="qrcode qrcode-one">
                 {/* <StaticImage src="../../images/qrcode/qrcode1.jpeg" alt="qrcode" /> */}
               </div>
-              <div className="qrcode qrcode-two">
+              {/* <div className="qrcode qrcode-two">
                 <StaticImage src="../../images/qrcode/qrcode2.jpeg" alt="qrcode" />
-              </div>
+              </div> */}
             </div>
           </div>
         </ContactWrapper>

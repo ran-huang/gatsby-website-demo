@@ -18,7 +18,7 @@ const FooterBottom = () => {
         <Link to="/">隐私政策</Link>|<Link to="/">使用条款和法律声明</Link>
       </div>
       <p className={register}>
-        京ICP备05084598号 | 京公网安备: 11010502038372号
+        京ICP备xxxxxxx号 | 京公网安备: 110xxxxxxxxxxxx号
       </p>
     </div>
   );

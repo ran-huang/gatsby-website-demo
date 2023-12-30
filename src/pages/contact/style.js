@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 import { colorStyles } from "@styles/common";
-import qrcode1 from "@images/qrcode/qrcode1.jpeg";
-import qrcode2 from "@images/qrcode/qrcode2.jpeg";
+import qrcode from "@images/qrcode/qrcode.png";
 
 const ContactWrapper = styled.div`
   margin-bottom: 50px;
@@ -70,12 +69,9 @@ const ContactWrapper = styled.div`
       }
 
       .qrcode-one {
-        background: url(${qrcode1}) center/cover;
+        background: url(${qrcode}) center/cover;
       }
 
-      .qrcode-two {
-        background: url(${qrcode2}) center/cover;
-      }
     }
   }
 
